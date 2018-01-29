@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="dl.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont (2).css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<script src="myCookie.js"></script>
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/drag.js"></script>
+		<script src="../public.js"></script>
+	</head>
+	<body>
+		<!-----------------header---------------->
+		<div class="header public">
+				<div class="head-left">
+					<a class="h-logo-l" href="http://www.beibei.com/" title="买母婴上贝贝"></a>
+				</div>
+				<div class="head-right">
+					<a class="h-logo-r" href="http://www.beibei.com/guarantee/" title="贝贝正品保证-全部正品,全场包邮,7天无理由退货-贝贝"></a>
+				</div>
+		</div>
+		<!-----------------content---------------->
+		<div class="content public">
+			<div class="con-left"></div>
+			<div class="con-right">
+				<form action="http://www.beibei.com/quick/1511/23-yrhwgytypzhc.html" class="con-f">
+					<div class="f-title">
+						<span class="span-l">登录贝贝</span>
+						<span class="span-r">
+							<span class="s-l">还没账号？</span>
+							<a class="span-a" href="dlzc.html">立即注册</a>
+						</span>
+					</div>
+					<!--手机号-->
+					<div class="f-sjh">
+						<span class="iconfont">&#xe75e;</span>
+						<label><input class="f-inp" id="tel" type="text" placeholder="您的手机号/邮箱"/><p id="spanPho"></p></label>
+					</div>
+					<!--密码-->
+					<div class="f-pwd" id="d-pwd">
+						<label>
+						<span class="iconfont">&#xe73e;</span>
+						<input type="password" class="f-pwd-p" placeholder="密码，6-16位字母、数字或符号" id="pwd"></label>
+					</div>
+					<!--滑块-->
+					<div id="drag"></div>
+					
+					<!--登录-->
+					<div class="f-reg" id="zuce">
+						<a href="">登录</a>
+					</div>
+                    <!--快捷登录-->
+                    <div class="ipt-quick">
+            			<span class="f-fl">快捷登录方式：</span>
+                		<a class="f-fl ipt-quick-login ipt-quick-qq" href="http://login.beibei.com/openid/qq/index.html" title="QQ账号登录"></a>
+                		<a class="f-fl ipt-quick-login ipt-quick-tb" href="http://login.beibei.com/openid/taobao/index.html" title="淘宝账号登录"></a>
+                		<a class="f-fl ipt-quick-login ipt-quick-wx" href="http://login.beibei.com/openid/weixin/index.html" title="微信账号登录"></a>
+                    </div>
+				</form>
+			</div>
+	    </div>
+	    <!----------------footer------------------->
+	    <div class="footer">
+			<div class="foot-con public">
+				<a href="">首页</a><span>|</span>
+				<a href="">关于贝贝</a><span>|</span>
+				<a href="">商家入驻</a><span>|</span>
+				<a href="">正品保证</a><span>|</span>
+				<a href="">人才招聘</a><span>|</span>
+				<a href="">练习我们</a><span>|</span>
+				<a href="">帮助中心</a><span>|</span>
+				<a href="">友情链接</a><span>|</span>
+				<a href="">手机客户端</a><span>|</span>
+				<a href="">客服在线</a><span>|</span>
+				<a href="">贝贝公益</a>
+				
+			</div>
+		</div>
+		<!------------------copy-------------------->
+		<div class="copy">
+			<div class="copy-con public">
+				<p>© 2014-2015 <a style="color:#999" 
+					href="http://www.beibei.com/support/help/about.html">贝贝</a>，
+					All Rights Reserved - 浙ICP备12005806号</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">$('#drag').drag();</script>
+		
+	</body>
+</html>
+<script>
+	$id("zuce").onclick = function(){
+		//取出cookie
+		var str = document.cookie;
+		//"username=lichune; userpwd=lichune"
+		var arr = str.split("; ");
+		for( var i = 0 ; i < arr.length ; i++ ){
+			var item = arr[i].split("=");
+			if( item[0] == "usertel" ){
+				tname = item[1];//将用户名预存到一个变量中
+			}
+			if( item[0] == "userpwd" ){
+				tpwd = item[1];//将密码预存到变量中
+				console.log(tpwd);
+			}
+		}
+	//获取用户输入的用户名和密码
+		var uname = $id("tel").value;
+		var upwd = $id("pwd").value;
+		if( uname == tname && upwd == tpwd ){
+			location.href ="index.html";
+		}else{
+			alert("登录失败");
+		}
+	}
+</script>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/dlzc.css"/>
+		<link rel="stylesheet" type="text/css" href="iconfont (2).css"/>
+		<link rel="stylesheet" type="text/css" href="../css/public.css"/>
+		<script src="myCookie.js"></script>
+		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/drag.js"></script>
+		<script src="../public.js"></script>
+		
+		
+	</head>
+	<body>
+		<!-----------------header---------------->
+		<div class="header public">
+				<div class="head-left">
+					<a class="h-logo-l" href="http://www.beibei.com/" title="买母婴上贝贝"></a>
+				</div>
+				<div class="head-right">
+					<a class="h-logo-r" href="http://www.beibei.com/guarantee/" title="贝贝正品保证-全部正品,全场包邮,7天无理由退货-贝贝"></a>
+				</div>
+		</div>
+		<!-----------------content---------------->
+		<div class="content public">
+			<div class="con-left"></div>
+			<div class="con-right">
+				<form action="https://login.beibei.com/member/register.html" class="con-f">
+					<div class="f-title">
+						<span class="span-l">新用户注册</span>
+						<span class="span-r">
+							<span class="s-l">已有账号？</span>
+							<a class="span-a" href="dl.html">直接登录</a>
+						</span>
+					</div>
+					<!--手机号-->
+					<div class="f-sjh">
+						<span class="iconfont">&#xe75e;</span>
+						<label><input class="f-inp" id="tel" type="text" placeholder="您的手机号"/><p id="spanPho"></p></label>
+					</div>
+					<!--滑块-->
+					<div id="drag"></div>
+					<!--验证码-->
+					<div class="f-code">
+						<div class="f-left-c">
+							<span class="iconfont">&#xe744;</span>
+							<label><input class="f-inp-c" id="verification" type="text" placeholder="短信验证码"/>
+							</label>
+						</div>
+						<a href="javescript:;" class="f-inp-h" id="verificationGode">获取验证码</a>
+					</div>
+					<!--密码-->
+					<div class="f-pwd" id="d-pwd">
+						<label>
+						<span class="iconfont">&#xe73e;</span>
+						<input type="password" class="f-pwd-p" placeholder="密码，6-16位字母、数字或符号" id="pwd"></label>
+					</div>
+					<!--注册-->
+					<div class="f-reg" id="zuce">
+						<a href="dl.html">注册</a>
+					</div>
+					<!--保障-->
+					<div class="ipt-tip">
+                        <span id="pwbz"> 为保障账户安全，建议密码为6-16位字符，可包含数字、字母和特殊字符。</span>
+                    </div>
+                    <!--协议-->
+                    <div class="ipt-xy">
+                        <span> 注册即接受 <a href="http://www.beibei.com/support/user/agreement.html" target="_blank">《贝贝使用协议》</a>
+                        	和<a href="http://www.beibei.com/support/user/community.html" target="_blank">《社区使用协议》</a>
+                		</span>
+                    </div>
+                    <!--快捷登录-->
+                    <div class="ipt-quick">
+            			<span class="f-fl">快捷登录方式：</span>
+                		<a class="f-fl ipt-quick-login ipt-quick-qq" href="http://login.beibei.com/openid/qq/index.html" title="QQ账号登录"></a>
+                		<a class="f-fl ipt-quick-login ipt-quick-tb" href="http://login.beibei.com/openid/taobao/index.html" title="淘宝账号登录"></a>
+                		<a class="f-fl ipt-quick-login ipt-quick-wx" href="http://login.beibei.com/openid/weixin/index.html" title="微信账号登录"></a>
+                    </div>
+				</form>
+			</div>
+	    </div>
+	    <!----------------footer------------------->
+	    <div class="footer">
+			<div class="foot-con public">
+				<a href="">首页</a><span>|</span>
+				<a href="">关于贝贝</a><span>|</span>
+				<a href="">商家入驻</a><span>|</span>
+				<a href="">正品保证</a><span>|</span>
+				<a href="">人才招聘</a><span>|</span>
+				<a href="">练习我们</a><span>|</span>
+				<a href="">帮助中心</a><span>|</span>
+				<a href="">友情链接</a><span>|</span>
+				<a href="">手机客户端</a><span>|</span>
+				<a href="">客服在线</a><span>|</span>
+				<a href="">贝贝公益</a>
+				
+			</div>
+		</div>
+		<!------------------copy-------------------->
+		<div class="copy">
+			<div class="copy-con public">
+				<p>© 2014-2015 <a style="color:#999" 
+					href="http://www.beibei.com/support/help/about.html">贝贝</a>，
+					All Rights Reserved - 浙ICP备12005806号</p>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script type="text/javascript">$('#drag').drag();</script>
+<script>
+	$id("tel").onblur =function (){
+		var spanTel = $id("spanPho");
+		var telTest = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/;
+		if(!telTest.test(this.value)){	
+			alert("手机号不合法，请重新输入")
+			return false;
+		}else{
+			return true;
+		}
+	}
+//	-------------验证码
+	var verificationGode =$id('verificationGode')
+	function fn(){
+		var str = "abcdefghijkmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ23456789";
+		var l = str.length;
+		var l1 = parseInt(Math.random()*l);
+		var l2 = parseInt(Math.random()*l);
+		var l3 = parseInt(Math.random()*l);
+		var l4 = parseInt(Math.random()*l);
+		console.log(l1,l2,l3,l4)
+		var x = str[l1]+str[l2]+str[l3]+str[l4]
+		return x	
+	}
+	//verification文本框
+	//hqyz//获取验证
+	verificationGode.innerHTML = fn() 
+	verificationGode.onclick = function (){
+		
+		verificationGode.innerHTML = fn();
+	}
+	$id("verification").onblur =function (){
+		if(verificationGode.innerHTML.toLowerCase() == this.value.toLowerCase()){  
+			//.toLowerCase() 不区分大小写字母
+			verificationGode.innerHTML = "通过"
+			verificationGode.style.color = "green"
+		}else{
+			verificationGode.innerHTML = "失败"
+			verificationGode.style.color = "red"
+		}
+	}
+	
+//	----------------密码
+   $id("pwd").onblur =function (){
+		if(!/^.{6,}$/.test(this.value)){
+			alert("密码不合法，请重新输入")
+			return false;
+		}else{
+			return true;
+		}
+	}
+   
+	$id("zuce").onclick=function(){
+		
+		var ipt = document.getElementsByTagName("input");
+		for(var i = 0; i < ipt.length; i++){ //循环
+	            if(ipt[i].value.length == 0){ //如果其中一个文本框没有填写
+	                alert("所有文本框都需要填写"); //弹出提示
+	                return false; //返回false
+		           }else{
+		            	var uname = $id("tel").value;
+						var upwd = $id("pwd").value;
+						document.cookie="usertel="+uname;
+						document.cookie="userpwd="+upwd;
+						alert("注册成功")
+						location.href="dl.html";
+		            }
+		       }
+	}
+		
+	
+</script>
+
+
+
+
+
+
+
+

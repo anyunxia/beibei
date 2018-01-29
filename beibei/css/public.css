@@ -1,0 +1,206 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend{margin:0; padding:0;}
+ul,li,ol{list-style:none;}
+img,fieldset{border:0; }
+img{display:block;}
+a{text-decoration:none; color:#333;}
+h1,h2,h3,h4,h5,h6{font-weight:100;}
+body{font-size:12px; font-family:"微软雅黑";}
+input,a{outline:none;}
+.public{
+	width:1080px;
+	margin:0 auto;
+}
+/*------------logo----------------------*/
+.logo{
+	width:100%;
+	height:30px;
+	background:#f4f4f4;
+	border-bottom:1px solid #d5d5d5;
+	}
+.logo .logo-con{
+	/*background: pink;*/
+	height:100%;
+}
+.logo .logo-con .logo-ul1{
+	margin-left:680px;
+}
+.logo .logo-con .logo-ul1 li{
+	float:left;
+	line-height: 28px;
+	 color:#333;
+	 font-size:12px;
+}
+.logo .logo-con .logo-ul1 img{
+	display: inline-block;
+	margin-left:3px;
+}
+.logo .logo-con .logo-ul1 span{
+	padding:0 10px;
+}
+.logo .logo-con .a2{
+	color:#ff647c;
+	margin-left:5px;
+}
+
+.logo .logo-con .iconfont{
+	color:#ff647c;
+}
+.logo .logo-ul1 .li3{
+	position:relative;
+}
+/*选项卡部分*/
+.logo .logo-con .li3 .logo-ul2{
+	position:absolute;
+	width:115px;
+	height:27px;
+	background:#fff;
+	border:1px solid #d5d5d5;
+	left:0;
+	top:30px;
+	display: none;
+}
+.logo .logo-con .li3 .logo-ul2 li{
+	height:100%;
+	line-height: 27px;
+}
+.logo .logo-con .li3:hover .logo-ul2{
+	display: block;
+}
+
+.logo .logo-con .logo-ul1 i{
+	padding-right:7px;
+	padding-left:10px;
+	
+}
+.logo .logo-con .li4{
+	position:relative;
+}
+.logo .logo-con .li4 .logo-ul3{
+	position:absolute;
+	width:223px;
+	height:145px;
+	border:1px solid #ccc;
+	top:31px;
+	left:-93px;
+	background:#fff;
+	display: none;
+}
+.logo .logo-con .li4:hover .logo-ul3{
+	display: block;
+}
+.logo-con .li4 .logo-ul3 .left{
+	width:125px;
+	height:120px;
+	margin:11px 0 12px 17px;
+	border-right:1px dashed #ccc;
+	float:left;
+}
+.logo-con .li4 .logo-ul3 .left span{
+	font-size:12px;
+}
+.logo-con .li4 .logo-ul3 .left a{
+	line-height:1px;
+}
+.logo-con .li4 .logo-ul3 .left a:nth-of-type(2){
+	display: block;
+}
+.logo-con .li4 .logo-ul3 .right{
+	float:left;
+}
+.logo .logo-con .li4 .logo-ul3 .right img{
+	display:block;
+	margin:20px 19px 9px 10px;
+}
+
+/*---------------------------------header-------------------------------------*/
+
+.header{
+	width:100%;
+	height:82px;
+	background:#fff;
+	}
+.header .head{
+	height:100%;
+}
+.header .head img{
+	float:left;
+	margin-top:15px;
+}
+.header .head ul{
+	float:right;
+}
+.header .head li{
+	float:left;
+	margin-right:17px;
+	line-height: 80px;
+}
+.header .head .iconfont{
+	color:#ff647c;
+	font-size:26px;
+	vertical-align: middle;
+}
+.header .head li a{
+	font-size:12px;
+	color:#888888;
+	padding-left:4px;
+	}
+.header .head li img{
+	margin-top:22px;
+}
+/*------------------------------------nav---------------------------------------------*/
+.nav{
+	width:100%;
+	height:35px;
+	background:#ff647c;
+	}
+.nav .nav-con{
+	height:100%;
+	position:relative;
+}
+.nav .nav-con .img{
+	height:100%;
+	position:absolute;
+	left:148px;
+	top:-8px;
+	width:28px;
+	height:18px;
+}
+
+.nav .nav-con a{
+	color:#fff;
+	line-height: 35px;
+	padding:0 30px;
+	font-weight: 600;
+}
+/*---------------------------------footer---------------------------------------------*/
+.footer{
+	width:100%;
+	height:38px;
+	background: #555555 ;
+	}
+.footer .foot-con{
+	height:100%;
+	text-align: center;
+}
+.footer .foot-con a{
+	line-height: 38px;
+	color:#dddddd;
+}
+.footer .foot-con span{
+	padding:0 14px;
+	color:#dddddd;
+}
+/*---------------------------------copy---------------------------------------------*/
+.copy{
+	width:100%;
+	height:85px;
+	background: #FFF ;
+	overflow: hidden;
+	}
+.copy .copy-con{
+	height:100%;
+	text-align: center;
+}
+.copy .copy-con p{
+	margin-top:24px;
+}

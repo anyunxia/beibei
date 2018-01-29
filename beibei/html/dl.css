@@ -1,0 +1,209 @@
+/*------------content----------------------*/
+.content{
+	padding-top:102px;
+	overflow: hidden;
+	}
+.content .con-left{
+	float:left;
+    width: 500px;
+    height: 354px;
+    background: no-repeat url(../image/ff.png);
+    position: relative;
+    left: 50px;
+}
+.content .con-right{
+	color: #666;
+    width: 400px;
+    border: 1px solid #ececec;
+    border-top: 2px solid #ff4965;
+    float: right;
+}
+.content .con-right .con-f{
+	padding:50px 35px;
+}
+.con-f .f-title{
+	font-size: 14px;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.con-f .f-title .span-l{
+	float:left;
+}
+.con-f .f-title .span-r{
+	float:right;
+	font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+.con-f .f-title .span-a{
+	color:#ff4965;
+}
+/*------------------------手机号------------------------*/
+.f-sjh{
+	margin-top:65px;
+	width:330px;
+	height:32px;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	position:relative;
+}
+.f-sjh .iconfont{
+	font-size:18px;
+	line-height:32px;
+	padding:0 8px;
+	border-right:1px solid #ccc;
+}
+.f-sjh .f-inp{
+    height: 30px;
+    font-size: 12px;
+    width: 278px;
+    color: #666;
+    line-height: 30px;
+    border: 0;
+    outline: 0;
+    padding: 0 6px;
+    background: 0 0;
+    position: relative;
+}
+/*-------------滑块---------*/
+#drag{ 
+    position: relative;
+    background-color: #e8e8e8;
+    width: 330px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-top:15px;
+}
+#drag .handler{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 44px;
+    height: 30px;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+.handler_bg{
+    background: #fff url("../image/1.png") no-repeat center;
+}
+.handler_ok_bg{
+    background: #fff url("../image/2.png") no-repeat center;
+}
+#drag .drag_bg{
+    background-color: #7ac23c;
+    height: 32px;
+    width: 0px;
+}
+#drag .drag_text{
+    position: absolute;
+    top: 0px;
+    width: 330px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    -o-user-select:none;
+    -ms-user-select:none; 
+}
+
+/*密码*/
+.con-f .f-pwd{
+	margin-top:18px;
+	width:330px;
+	height:32px;
+	border:1px solid #ccc;
+	border-radius: 2px;
+}
+.f-pwd .iconfont{
+	font-size:18px;
+	line-height:32px;
+	padding:0 8px;
+	border-right:1px solid #ccc;
+}
+.f-pwd .f-pwd-p{
+	height: 30px;
+    font-size: 12px;
+    width: 278px;
+    color: #666;
+    line-height: 30px;
+    border: 0;
+    outline: 0;
+    padding: 0 6px;
+    background: 0 0;
+    position: relative;
+}
+/*登录*/
+.f-reg{
+	margin-top:15px;
+	width:330px;
+	height:32px;
+	border:1px solid #ccc;
+	border-radius: 2px;
+	background: #ff4965;
+	text-align: center;
+}
+.f-reg a{
+	color:#fff;
+	line-height:32px;
+	font-size:14px;
+	letter-spacing: 6px;
+}
+.f-reg:hover{
+	opacity: 0.7;
+}
+
+
+
+
+
+.ipt-quick{
+	overflow: hidden;
+	height:24px;
+	margin-top:15px;
+	line-height: 24px;
+}
+.ipt-quick .f-fl{
+	float:left;
+}
+.ipt-quick .ipt-quick-qq{
+	width: 25px;
+    height: 24px;
+    margin: 0 4px;
+    background-image:url(../image/qwt.png);
+    background-repeat:no-repeat;
+    background-position:1px 0 ;
+}
+.ipt-quick .ipt-quick-tb{
+	width: 25px;
+    height: 24px;
+    margin: 0 4px;
+    background-image:url(../image/qwt.png);
+    background-repeat:no-repeat;
+    background-position:1px 0 ;
+    background-position:-59px 0 ;
+}
+.ipt-quick .ipt-quick-wx{
+	width: 25px;
+    height: 24px;
+    margin: 0 4px;
+    background-image:url(../image/qwt.png);
+    background-repeat:no-repeat;
+    background-position:1px 0 ;
+    background-position:-118px 0 ;
+}
+
+		
+#verificationGode{
+				width: 86px;
+			    height: 32px;
+			    border: 1px solid #ff4965;
+			    display: inline-block;
+			    text-align: center;
+			    border-radius: 2px;
+			    line-height: 32px;
+			    margin-right: 10px;
+			    position:absolute;
+			    left:243px;top:0;
+			    
+		}

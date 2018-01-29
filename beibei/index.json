@@ -1,0 +1,63 @@
+"classify001":{
+		"list" : [
+			{
+				"id" : "shop01",
+				"name" : "小米1",
+				"src" : "9.jpg"
+			},
+			{
+				"id" : "shop02",
+				"name" : "小米2",
+				"src" : "2.jpg"
+				
+			},
+			{
+				"id" : "shop03",
+				"name" : "小米3",
+				"src" : "3.jpg",
+				"price" : "999"
+			},
+			{
+				"id" : "shop04",
+				"name" : "小米4",
+				"src" : "4.jpg"
+				
+			},
+			{
+				"id" : "shop05",
+				"name" : "小米5",
+				"src" : "5.jpg"
+				
+			},
+			{
+				"id" : "shop06",
+				"name" : "小米6",
+				"src" : "6.jpg"
+			
+			},
+			{
+				"id" : "shop07",
+				"name" : "小米7",
+				"src" : "7.jpg"
+				
+			},
+			{
+				"id" : "shop08",
+				"name" : "小米8",
+				"src" : "8.jpg"
+				
+			},
+			{
+				"id" : "shop09",
+				"name" : "小米9",
+				"src" : "9.jpg"
+				
+			},
+			{
+				"id" : "shop10",
+				"name" : "小米10",
+				"src" : "10.jpg"
+				
+			}
+		]
+	}
